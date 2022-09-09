@@ -25,7 +25,6 @@ const App = () => {
 
   return (
     <VideoPlayer
-      controlTimeoutDelay={9999999999}
       onLoad={onLoad}
       onProgress={onProgress}
       onSeek={onSeek}

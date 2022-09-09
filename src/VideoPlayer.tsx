@@ -1,5 +1,5 @@
 import React, {useCallback, useState, useEffect, useRef} from 'react';
-import {Pressable, useTVEventHandler} from 'react-native';
+import {View, useTVEventHandler} from 'react-native';
 import Video, {
   OnLoadData,
   OnProgressData,
@@ -277,7 +277,9 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
 
   useTVEventHandler((evt: any) => {
     console.log('evt', evt);
-    setShowControls(true);
+    showControlAnimation();
+    setControlTimeout();
+    typeof events.onShowControls === 'function' && events.onShowControls();
   });
 
   useEffect(() => {
@@ -379,8 +381,8 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
   }, []);
 
   return (
-    <Pressable
-      onPress={events.onScreenTouch}
+    <View
+      // onPress={events.onScreenTouch}
       style={[_styles.player.container, styles.containerStyle]}>
       <>
         <Video
@@ -450,6 +452,6 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
           </>
         )}
       </>
-    </Pressable>
+    </View>
   );
 };
