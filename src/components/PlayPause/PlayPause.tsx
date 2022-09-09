@@ -51,6 +51,7 @@ export const PlayPause = ({
         <Image source={rewind} resizeMode={'contain'} style={styles.rewind} />
       </Control>
       <Control
+        hasTVPreferredFocus={true}
         callback={togglePlayPause}
         resetControlTimeout={resetControlTimeout}
         style={styles.playContainer}>

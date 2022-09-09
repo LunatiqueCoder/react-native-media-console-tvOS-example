@@ -1,4 +1,6 @@
 import React, {useCallback, useState, useEffect, useRef} from 'react';
+import 'react-native/tvos-types.d';
+
 import {View, useTVEventHandler} from 'react-native';
 import Video, {
   OnLoadData,
@@ -275,11 +277,11 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
     onEnd: events.onEnd,
   });
 
-  useTVEventHandler((evt: any) => {
+  useTVEventHandler((evt) => {
     console.log('evt', evt);
-    showControlAnimation();
-    setControlTimeout();
-    typeof events.onShowControls === 'function' && events.onShowControls();
+    if (!showControls) {
+      events.onScreenTouch();
+    }
   });
 
   useEffect(() => {
