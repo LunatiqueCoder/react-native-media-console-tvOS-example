@@ -5564,10 +5564,10 @@ react-native-gradle-plugin@^0.0.6:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.6.tgz#b61a9234ad2f61430937911003cddd7e15c72b45"
   integrity sha512-eIlgtsmDp1jLC24dRn43hB3kEcZVqx6DUQbR0N1ABXGnMEafm9I3V3dUUeD1vh+Dy5WqijSoEwLNUPLgu5zDMg==
 
-react-native-media-console@^1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/react-native-media-console/-/react-native-media-console-1.2.9.tgz#f3c8d3bc198c39c958244d7dcd8004aeab3d10ea"
-  integrity sha512-BFSaw22vhNCv065RX1qWbBg98p2QJomG+VTh7TfJXZ41uAdkrLv2pnYj85bd4JM1EDjal263UOjAphPVXx1Gag==
+react-native-media-console@2.0.0-1:
+  version "2.0.0-1"
+  resolved "https://registry.yarnpkg.com/react-native-media-console/-/react-native-media-console-2.0.0-1.tgz#9a1ebcb53984263eadc7d35dd7f7ab3209bf5d15"
+  integrity sha512-JfX+VilqMqCUPrj8WA8YW0n0RZXCgED2ljT0kt5OB3t6q2/iEzgCc+X2ojt2DDVoD2i4Qjm3AbOG8i5qC72Fgg==
 
 react-native-video@^5.2.0:
   version "5.2.0"

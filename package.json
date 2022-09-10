@@ -13,7 +13,7 @@
     "@types/react-native-video": "^5.0.14",
     "react": "17.0.2",
     "react-native": "npm:react-native-tvos@0.68.1-1",
-    "react-native-media-console": "^1.2.9",
+    "react-native-media-console": "2.0.0-1",
     "react-native-video": "^5.2.0"
   },
   "devDependencies": {

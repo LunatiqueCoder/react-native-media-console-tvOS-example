@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {VideoPlayer} from './src/VideoPlayer';
+import VideoPlayer from 'react-native-media-console';
 import {OnProgressData, OnSeekData} from 'react-native-video';
 
 const App = () => {
